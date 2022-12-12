@@ -54,6 +54,24 @@
 
 // header('Location: https://www.w3schools.com/%27);
 
+
+// echo gettype(array("walaa","huda"));
+// echo (int) (10.5 + 10.5);
+// echo gettype((int) (10.5 + 10.5));
+function show_var($var) 
+{
+    if (is_scalar($var)) {
+        echo $var;
+    } else {
+        var_dump($var);
+    }
+}
+$pi = 3.1416;
+$proteins = array("hemoglobin", "cytochrome c oxidase", "ferredoxin");
+
+show_var($pi);
+show_var($proteins)
+
 ?>
 
 <!-- <!DOCTYPE html>
